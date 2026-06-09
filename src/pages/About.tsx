@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 
 
 const About: React.FC = () => {
-    const [searchParams, setSearchParams] = useSearchParams();
+    const [searchParams] = useSearchParams();
 
     useEffect(()=>{
         // try the url with about?q=react&lang=en
