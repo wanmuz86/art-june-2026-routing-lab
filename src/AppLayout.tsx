@@ -7,8 +7,9 @@ export default function AppLayout() {
         <ul>
           <li><NavLink to="/">Home</NavLink></li>
           <li><NavLink to="/about">About</NavLink></li>
-          <li><NavLink to="/user/1">User 1</NavLink></li>
-          <li><NavLink to="/user/2">User 2</NavLink></li>
+          <li><NavLink to="/profile/1">Profile User 1</NavLink></li>
+          <li><NavLink to="/profile/2">Profile User 2</NavLink></li>
+          
           <li><a href="/about">About</a></li>
            <li><NavLink to="/navigate">Navigate Porgrammatically</NavLink></li>
         </ul>

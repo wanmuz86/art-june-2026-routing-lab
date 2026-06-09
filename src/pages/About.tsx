@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 
 
 const About: React.FC = () => {
+    const [searchParams, setSearchParams] = useSearchParams();
+
+    useEffect(()=>{
+        // try the url with about?q=react&lang=en
+        console.log(searchParams.get('q'));
+        console.log(searchParams.get('lang'));
+    },[])
  return (
    <div>
      <h1>About Page</h1>
