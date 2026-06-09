@@ -3,6 +3,8 @@ import AppLayout from "./AppLayout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
+import User from "./pages/User";
+import NavigateProgrammatically from "./pages/NavigateProgrammatically";
 
 
 
@@ -13,8 +15,10 @@ export const router = createBrowserRouter([
     element: <AppLayout />,
     children: [
       { index: true, element: <Home /> },  // If it is / -> Show Home component in Outlet
-      { path: "about", element: <About /> }, // /about -> Show <About/> component
-      { path: "*", element: <NotFound/> // wildcard -> show <NotFound/>
+      { path: "about", element: <About /> }, // /about -> Show <About/> component.
+    { path: "user/:userId", element: <User /> }, // It will have a parameters userId defined in the routes
+       { path: "navigate", element: <NavigateProgrammatically /> },  
+    { path: "*", element: <NotFound/> // wildcard -> show <NotFound/>
  },
     ],
   },
